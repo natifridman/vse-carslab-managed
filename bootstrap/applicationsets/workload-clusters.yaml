@@ -7,8 +7,8 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/redhat-partner-solutions/vse-carslab-managed
-        revision: main
+        repoURL: https://github.com/natifridman/vse-carslab-managed
+        revision: cars-lab
         directories:
           - path: clusters/overlays/*
   template:
@@ -27,8 +27,8 @@ spec:
             factor: 2
             maxDuration: 5m
       source:
-        repoURL: https://github.com/redhat-partner-solutions/vse-carslab-managed
-        targetRevision: main
+        repoURL: https://github.com/natifridman/vse-carslab-managed
+        targetRevision: cars-lab
         path: '{{path}}'
       destination:
-        server: https://kubernetes.default.svc
+        server: blazer-cars-lab
