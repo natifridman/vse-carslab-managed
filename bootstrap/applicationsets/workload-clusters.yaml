@@ -31,4 +31,4 @@ spec:
         targetRevision: cars-lab
         path: '{{path}}'
       destination:
-        server: blazer-cars-lab
+        server: https://api.blazer.cars.lab:6443v
